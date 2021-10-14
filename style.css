@@ -349,11 +349,13 @@ body{
   line-height: 2;
 }
 .details{
+  margin-left : 47%;
+  margin-right: 50%;
   position: absolute;
   transform:rotate(90deg);
   font-size: 50px;
   padding: 15px;
-  left: 50%;
+  align-self: center;
   cursor: pointer;
   color: #7f8fa6;
   transition: 0.5s;
@@ -370,11 +372,92 @@ details[open] summary{
   margin: 0;
   padding: 0;
   top: 93%;
-  left: 50%;
+  margin-left : 47%;
+  margin-right: 50%;
   position: absolute;
   transform:rotate(180deg);
   color: #eee;
 }
+.titleus{
+  font-family: 'Lobster', cursive;
+  color: white;
+  text-decoration: underline;
+  margin: 6px;
+  padding: 6px;
+  padding-top: 20px;
+  padding-bottom: 2%;
+  letter-spacing: 3px;
+  text-shadow: 2px 2px rgb(143, 137, 137);
+}
+.us{
+  background-color: #353b48;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.us > span{
+  float: right;
+  margin: 0;
+  padding: 0;
+  margin-right: 40%;
+  text-decoration: underline;
+}
+.video-container {
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-wrap: nowrap;
+  width:50%;
+  margin-left: 25%;
+  margin-top: 4%;
+  margin-bottom: 10%;
+}
+
+.video-container::after {
+  padding-top: 56.25%;
+  display: block;
+  content: '';
+  
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.social-media-icons{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.social-media-icons > a{
+  justify-content: space-evenly;
+  margin: 10%;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-top: 50px;
+  margin-bottom: 120px;
+}
+@media (max-width: 500px) {
+  .social-media-icons {
+    flex-direction: column;
+  }
+}
+.follow-us{
+  font-family: 'Lobster', cursive;
+  color: #2c3e50;
+  text-decoration: underline;
+  margin: 6px;
+  margin-top:50px;
+  padding: 6px;
+  padding-top: 20px;
+  padding-bottom: 2%;
+  letter-spacing: 3px;
+  text-shadow: 2px 2px rgb(143, 137, 137);
+}
+
 
 
 
