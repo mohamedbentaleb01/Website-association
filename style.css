@@ -115,7 +115,7 @@ body{
   color: black;
   letter-spacing: 2px;
   line-height: 35px;
-  top : 59%;
+  top : 65%;
   left:15%;
   -webkit-animation-name: posi;
   -webkit-animation-duration: 2s;
@@ -507,7 +507,7 @@ footer{
   margin-left: 40px;
 }
 .copyrights{
-  color: #fff;
+  color: #eee;
 }
 .v1{
   border-left: 2px solid grey;
@@ -570,12 +570,13 @@ iframe, embed{
   max-width: 100%;
   margin-right: 3px;
 }
-.part3footer >input:hover{
+.part3footer > input:focus{
+  outline: none;
   border: 1px solid salmon;
 }
 .part3footer > button{
   width: 80px;
-  padding: 10px 10px;
+  padding: 12px 12px;
   background-color: #0d0d0d;
   color: #fff;
   font-size: 15px;
@@ -583,6 +584,7 @@ iframe, embed{
   border-radius: 20px;
   border: none;
   cursor: pointer;
+  max-width: 100%;
 }
 .part3footer > button:hover{
   background-color: salmon;
@@ -614,6 +616,11 @@ iframe, embed{
   bottom: 32px;
   pointer-events: auto;
   opacity: 1;
+}
+h3{
+  text-decoration: underline;
+  text-decoration-color: salmon;
+  text-decoration-thickness: 2px;
 }
 
 
