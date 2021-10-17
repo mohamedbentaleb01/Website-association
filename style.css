@@ -468,6 +468,10 @@ footer{
     flex-direction: column;
     font-size: 10px;
   }
+  .map{
+    width:"100";
+    height:"100";
+  }
 }
 .logofooter{
   width: 120px; 
@@ -504,12 +508,12 @@ footer{
   border-left: 3px solid grey;
   height: 290px;
   position: absolute;
-  left: 36%;
+  left: 35%;
 }
 .part2footer{
   margin-top: 50px;
   position: absolute;
-  left: 40%;
+  left: 38%;
   width : 30%;
   padding-top: 10px;
   line-height: 27px;
@@ -518,11 +522,8 @@ footer{
 .part2footer > h3{
   padding-bottom: 30px;
 }
-#map {
-  height: 200px;
-  /* The height is 400 pixels */
-  width: 100%;
-  /* The width is the width of the web page */
+.map{
+  margin-top: 10px;
 }
 
 
