@@ -10,25 +10,86 @@
     <link rel="stylesheet" href="css/social-circles.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <link rel="shortcut icon" type="image/jpg" href="assets/logo.png"/>
-    
   </head>
 
   <body>
     <header>
       <div id=logo><img src="assets/logo.png" class="logoim" alt=""/></div>
       <span class="navbar">
-        <a class="login-but" href="#">
+        <a id="login-trigger" class="login-trigger" href="#" data-target="#login" data-toggle="modal">
           <span class="material-icons">
           login
           </span>
         </a>
+        
       </span>
+      
       <span class="navbar"><a class="act" href="#">Devenir membre</a></span>
       <span class="navbar"><a class="" href="#">Nous contacter</a></span>
       <span class="navbar"><a class="" href="#">Forum</a></span>
       <span class="navbar"><a class="" href="#">Acceuil</a></span>
     </header>
-    
+    <!-- modal login/register -->
+    <div class="login-section" id="login-section">
+    <div id="login" class="modal fade" role="dialog">
+      <div class="modal-dialog" id="modal-dialog">
+        
+        <div class="modal-content">
+          <div class="modal-body">
+            <button data-dismiss="modal" class="close" id="close">&times;</button>
+            <div class="container2" id="container2">
+                <div class="form-container sign-up-container">
+                  <form action="#">
+                    <h1>Créer un compte</h1>
+                    <div class="social-container">
+                      <a class="icon-facebook social-button borderless"  href="http://instagram.com/username"></a>
+                      <a class="icon-linkedin social-button borderless" href="http://instagram.com/username"></a>
+                      <a class="icon-googleplus social-button borderless" href="http://instagram.com/username"></a>
+                    </div> 
+                    <span>ou utilisé votre email pour ce connecter</span>
+                    <input type="text" placeholder="Name" />
+                    <input type="email" placeholder="Email" />
+                    <input type="password" placeholder="Password" />
+                    <button class="Signup-button">S'inscrire</button>
+                  </form>
+                </div>
+                <div class="form-container sign-in-container">
+                  <form action="#">
+                    <h1>Se connecter</h1>
+                    <div class="social-container">
+                      <a class="icon-facebook social-button borderless" href="http://instagram.com/username"></a>
+                      <a class="icon-linkedin social-button borderless" href="http://instagram.com/username"></a>
+                      <a class="icon-googleplus social-button borderless" href="http://instagram.com/username"></a>
+                    </div>
+                    <span>ou utilisé votre compte</span>
+                    <input type="email" placeholder="Email" />
+                    <input type="password" placeholder="Password" />
+                    <a href="#">Mot de passe oublié ?</a>
+                    <button class="Signin-button">Se connecter</button>
+                  </form>
+                </div>
+                <div class="overlay-container">
+                  <div class="overlay">
+                    <div class="overlay-panel overlay-left">
+                      <h1 class="h1">Welcome Back!</h1>
+                      <p class="p">Pour rester connecté avec nous, veuillez vous connecter avec vos informations personnelles</p>
+                      <button class="ghost" id="signIn">Se connecter</button>
+                    </div>
+                    <div class="overlay-panel overlay-right">
+                      <h1 class="h1">Bonjour !</h1>
+                      <p class="p">Entrez vos données personnelles et commencez votre voyage avec nous</p>
+                      <button class="ghost" id="signUp">S'inscrire</button>
+                    </div>
+                  </div>
+                </div>
+                </div>
+          </div>
+        </div>
+      </div>  
+    </div>
+    </div>
+  <!-- modal end -->
+  
     <div class="slider">
       <div class="myslider fade" style="display: block;">
         <div class="txt">

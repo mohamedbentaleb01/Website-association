@@ -49,6 +49,36 @@ window.addEventListener("scroll", () => {
 		toTop.classList.add("active");
 	} else {
 		toTop.classList.remove("active");
-		console.log("hey")
 	}
 })
+
+// login and register form
+	const signUpButton = document.getElementById('signUp');
+	const signInButton = document.getElementById('signIn');
+	const container = document.getElementById('container2');
+
+	signUpButton.addEventListener('click', () => {
+		container.classList.add("right-panel-active");
+	});
+
+	signInButton.addEventListener('click', () => {
+		container.classList.remove("right-panel-active");
+	});
+
+	//display modal dialog login and register
+	const modal = document.getElementById("login-trigger");
+	const close = document.getElementById("close");
+	const Dialog = document.getElementById("modal-dialog");
+	const loginSection = document.getElementById("login-section");
+
+	modal.addEventListener('click', () => {
+		loginSection.classList.add("active");
+		Dialog.classList.add("active");
+	});
+
+	close.addEventListener('click', () => {
+		Dialog.classList.remove("active");
+		loginSection.classList.remove("active");
+	});
+	
+
