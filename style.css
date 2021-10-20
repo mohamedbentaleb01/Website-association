@@ -653,7 +653,17 @@ h3{
   align-items: center;
   box-sizing: border-box;
 }
+@media only screen and (max-width : 1000px) {
+  #modal-dialog {
+  display:block;
+  width:70%;
+  }
+  #login{
+    align-items: center;
+    justify-content: center;
+  }
 
+}
 
 /*Modal*/
 #modal-dialog{

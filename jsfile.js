@@ -80,5 +80,4 @@ window.addEventListener("scroll", () => {
 		Dialog.classList.remove("active");
 		loginSection.classList.remove("active");
 	});
-	
 
