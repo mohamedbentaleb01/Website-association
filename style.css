@@ -637,9 +637,15 @@ h3{
 .login-trigger {
   font-weight: bold;
   color: #fff;
-  padding: 15px 30px;
   border-radius: 30px;
+  padding: 12px;
   position: relative; 
+}
+.login-trigger:hover{
+  color : black;
+  background: white;
+  border: none;
+  transition: all .8s;
 }
 #login{
   display: flex;
