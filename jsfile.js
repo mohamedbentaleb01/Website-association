@@ -70,24 +70,32 @@ window.addEventListener("scroll", () => {
 	const close = document.getElementById("close");
 	const Dialog = document.getElementById("modal-dialog");
 	const loginSection = document.getElementById("login-section");
+	const NavBar = document.getElementById("main");
 
 	modal.addEventListener('click', () => {
 		loginSection.classList.add("active");
 		Dialog.classList.add("active");
+		NavBar.classList.add("active");
+		
 	});
 
 	close.addEventListener('click', () => {
 		Dialog.classList.remove("active");
 		loginSection.classList.remove("active");
+		NavBar.classList.remove("active");
 	});
-// display sidebar menu on phone
-// function openNav() {
-//   document.getElementById("mySidebar").style.width = "250px";
-//   document.getElementById("main").style.marginLeft = "250px";
-// }
 
-// function closeNav() {
-//   document.getElementById("mySidebar").style.width = "0";
-//   document.getElementById("main").style.marginLeft= "0";
-// }
+	// vue JS integration 
+	var mySidebar = new Vue({
+		el:'#mySidebar',
+		data: {
+			Acceuil : '<a class="" href="index.html">Acceuil</a>',
+			Forum : '<a class="" href="#">Forum</a>',
+			Contact : '<a class="" onclick="closeNav()" href="#part2footer">Nous contacter</a>',
+			Membres : '<a class="act" href="#">Devenir membre</a>',
+			login : '<a id="login-trigger" class="login-trigger"><span class="material-icons">login</span>&nbsp;Se connecter</a>'
+	},
+	})
+
+
 

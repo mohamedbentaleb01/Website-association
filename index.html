@@ -9,6 +9,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="css/social-circles.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <!-- vueJs integration -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+
     <link rel="shortcut icon" type="image/jpg" href="assets/logo.png"/>
   </head>
 
@@ -16,7 +19,7 @@
     <header id="main">
       <div id=logo><img src="assets/logo.png" class="logoim" alt=""/></div>
       <span class="navbar">
-        <a id="login-trigger" class="login-trigger" href="#" data-target="#login" data-toggle="modal">
+        <a id="login-trigger" class="login-trigger">
           <span class="material-icons">
           login
           </span>
@@ -25,7 +28,7 @@
       <span class="navbar"><a class="act" href="#">Devenir membre</a></span>
       <span class="navbar"><a class="" href="#footer">Nous contacter</a></span>
       <span class="navbar"><a class="" href="#">Forum</a></span>
-      <span class="navbar"><a class="" href="#">Acceuil</a></span>
+      <span class="navbar" ><a class="" href="#">Acceuil</a></span>
       <span class="menu"><a class="openbtn" onclick="openNav()">
         <span class="material-icons">
         menu
@@ -33,12 +36,21 @@
       </span>
     </header>
     <!-- sidebar display on phone -->
-    <div id="mySidebar" class="sidebar">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-      <a href="#">About</a>
-      <a href="#">Services</a>
-      <a href="#">Clients</a>
-      <a href="#">Contact</a>
+    <div class="sidemenu">
+      <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+          <span class="material-icons" style="color: #edd222;">
+          cancel
+          </span>
+        </a>
+        <!-- Vue js data binding -->
+          <span v-html="Acceuil"></span>
+          <span v-html="Forum"></span>
+          <span v-html="Contact"></span>
+          <span v-html="Membres"></span>
+          <span v-html="login"></span>
+        <!--  -->
+      </div>
     </div>
     <!-- sidebar display on phone -->
     <!-- modal login/register -->
@@ -321,11 +333,11 @@
           <a class="icon-facebook social-button borderless" style="font-size:  28px;color:#fff;" href="http://twitter.com/username"></a>
         </div>
       </div>
-      <hr class="hr2" style="">
+      <hr class="hr2">
         <div class="v1">
           
         </div>
-      <div class="part2footer">
+      <div class="part2footer" id="part2footer">
         <!-- localisation -->
         <span class="material-icons">
           location_on
@@ -351,11 +363,11 @@
         </iframe>
         </div>
       </div>
-      <hr class="hr2" style="">
+      <hr class="hr2">
       <div class="v2">
           
       </div>
-      <div class="part3footer">
+      <div class="part3footer" id="part3footer">
         <span class="material-icons">
           contact_mail
           </span>
@@ -386,15 +398,21 @@
       AOS.init();
     </script>
     <script>
+    
     function openNav() {
-      document.getElementById("mySidebar").style.width = "400px";
-      document.getElementById("main").style.marginLeft = "400px";
-    }
-
+        document.getElementById("mySidebar").style.width= "400px";
+        document.getElementById("main").style.marginLeft = "400px";
+      }
+      
     function closeNav() {
       document.getElementById("mySidebar").style.width = "0";
       document.getElementById("main").style.marginLeft= "0";
     }
+
+    // function hideNav() {
+    //   document.getElementById("Navbar").style.display = "hidden";
+    // }
+
     </script>
   </body>
   

@@ -41,6 +41,10 @@ body{
   font-weight: bold;
   text-decoration: none;
 }
+#main.active{
+  background: linear-gradient(to right, #5c8494 , #082c3e );
+  transition: all .5s;
+}
 .act{
   border: none;
   background-color: #edd222;
@@ -245,8 +249,9 @@ body{
     font-size: 14px;
   }
 }
-#mySidebar{
-  /* display: contents; */
+/* in laptop width */
+.sidemenu{
+  display: none;
 }
 
 /* adjusting website on phone display */
@@ -279,6 +284,9 @@ body{
     display: none;
   }
   /* display sidebar-menu */
+  .sidemenu{
+    display: block;
+  }
   .sidebar {
     height: 100%;
     width: 0%;
@@ -307,7 +315,6 @@ body{
   }
   .closebtn{
     color : white;
-    background-color: #edd222;
     margin-right: 10px;
     text-decoration: none;
   }
@@ -957,6 +964,7 @@ iframe, embed{
   border-radius: 30px;
   padding: 12px;
   position: relative; 
+  cursor: pointer;
 }
 .login-trigger:hover{
   color : black;
