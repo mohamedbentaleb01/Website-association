@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <!-- <meta name="viewport" content="width=device-width,initial-scale=1"/> -->
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <title>Association Ibtissamat alghad</title>
     <link rel="stylesheet" href="style.css">
     <!-- icons for social media -->
@@ -13,22 +13,34 @@
   </head>
 
   <body>
-    <header>
+    <header id="main">
       <div id=logo><img src="assets/logo.png" class="logoim" alt=""/></div>
       <span class="navbar">
         <a id="login-trigger" class="login-trigger" href="#" data-target="#login" data-toggle="modal">
           <span class="material-icons">
           login
           </span>
-        </a>
-        
+        </a> 
       </span>
-      
       <span class="navbar"><a class="act" href="#">Devenir membre</a></span>
       <span class="navbar"><a class="" href="#footer">Nous contacter</a></span>
       <span class="navbar"><a class="" href="#">Forum</a></span>
       <span class="navbar"><a class="" href="#">Acceuil</a></span>
+      <span class="menu"><a class="openbtn" onclick="openNav()">
+        <span class="material-icons">
+        menu
+        </span></a>
+      </span>
     </header>
+    <!-- sidebar display on phone -->
+    <div id="mySidebar" class="sidebar">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Clients</a>
+      <a href="#">Contact</a>
+    </div>
+    <!-- sidebar display on phone -->
     <!-- modal login/register -->
     <div class="login-section" id="login-section">
     <div id="login" class="modal fade" role="dialog">
@@ -93,7 +105,7 @@
     <div class="slider">
       <div class="myslider fade" style="display: block;">
         <div class="opacity">
-            <img class="img" src="assets/even1.jpg" style="width:100%; height:100%;">
+            <img class="img" src="assets/assicd.jpg" style="width:100%; height:100%;">
         </div>
         <div class="desc-first-slider">
             <h1 class="Title-slide1">Association Ibtissamat Al-ghad</h1>
@@ -117,7 +129,7 @@
 
       <div class="myslider fade" style="display: block;">
         <div class="opacity">
-            <img class="img" src="assets/Assoc2.jpeg" style="width:100%; height:100%;">
+            <img class="img" src="assets/P2.jpg" style="width:100%; height:100%;">
         </div>
         <div class="desc-first-slider">
             <h1 class="Title-slide1">Association Ibtissamat Al-ghad</h1>
@@ -129,7 +141,7 @@
       
       <div class="myslider fade" style="display: block;">
         <div class="opacity">
-            <img class="img" src="assets/Assoc3.jpeg" style="width:100%; height:100%;">
+            <img class="img" src="assets/a1.jpg" style="width:100%; height:100%;">
         </div>
         <div class="desc-first-slider">
             <h1 class="Title-slide1">Association Ibtissamat Al-ghad</h1>
@@ -235,13 +247,13 @@
           </iframe>
           
         </div>
+        <hr style="color:grey">
         <!-- end video  -->
-      <hr style="color: grey;">
   </div>
   <!-- fin partie qui somme nous -->
   <!-- partie membres -->
   <div class="membres" data-aos="fade-right" data-aos-duration="1200">
-  <hr style="color: grey;">
+    <hr style="color: grey;">
   <h1 align="center" class="titlemembers" data-aos="fade-right" data-aos-duration="1200">
       Membres :
   </h1>
@@ -252,14 +264,14 @@
           <div class="desc">
             <b>Name-LastName</b>
             <p>Lorem ipsum dolor sit amet.</p>
-            <p style="color:white; font-family: 'Lobster', cursive;">" Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam, perspiciatis."</p>
+            <p class="quote" style="color:white; font-family: 'Lobster', cursive;">" Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam, perspiciatis."</p>
         </div>
 
         <img class="memberspics" src="assets/member1.jpeg" alt=""/>
           <div class="desc">
             <b>Name-LastName</b>
             <p>Lorem ipsum dolor sit amet.</p>
-            <p style="color:white; font-family: 'Lobster', cursive;">" Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam, perspiciatis."</p>
+            <p class="quote" style="color:white; font-family: 'Lobster', cursive;">" Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam, perspiciatis."</p>
         </div>
       
     </div>
@@ -273,14 +285,14 @@
               <div class="desc">
                 <b>Name-LastName</b>
                 <p>Lorem ipsum dolor sit amet.</p>
-                <p style="color:white; font-family: 'Lobster', cursive;">" Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam, perspiciatis."</p>
+                <p class="quote" style="color:white; font-family: 'Lobster', cursive;">" Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam, perspiciatis."</p>
             </div>
           
           <img class="memberspics" src="assets/member4.jpg" alt=""/>
               <div class="desc">
                 <b>Name-LastName</b>
                 <p>Lorem ipsum dolor sit amet.</p>
-                <p style="color:white; font-family: 'Lobster', cursive;">" Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam, perspiciatis."</p>
+                <p class="quote" style="color:white; font-family: 'Lobster', cursive;">" Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam, perspiciatis."</p>
             </div>
           
         </div>
@@ -309,6 +321,7 @@
           <a class="icon-facebook social-button borderless" style="font-size:  28px;color:#fff;" href="http://twitter.com/username"></a>
         </div>
       </div>
+      <hr class="hr2" style="">
         <div class="v1">
           
         </div>
@@ -338,6 +351,7 @@
         </iframe>
         </div>
       </div>
+      <hr class="hr2" style="">
       <div class="v2">
           
       </div>
@@ -356,7 +370,7 @@
     <!-- copyright -->
     <div class="copyrights">
       <div class="container text-center">
-        <p class="text-muted mb-0 py-2">Ibtissamat al-ghad © 2021 Développer par <b>Mohamed BENTTALEB.</b> </p>
+        <p class="text-muted">Ibtissamat al-ghad © 2021 Développer par <b>Mohamed BENTTALEB.</b> </p>
       </div><br/>
     </div>
   </footer>
@@ -370,6 +384,17 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script>
       AOS.init();
+    </script>
+    <script>
+    function openNav() {
+      document.getElementById("mySidebar").style.width = "400px";
+      document.getElementById("main").style.marginLeft = "400px";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidebar").style.width = "0";
+      document.getElementById("main").style.marginLeft= "0";
+    }
     </script>
   </body>
   

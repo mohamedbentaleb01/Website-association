@@ -80,4 +80,14 @@ window.addEventListener("scroll", () => {
 		Dialog.classList.remove("active");
 		loginSection.classList.remove("active");
 	});
+// display sidebar menu on phone
+// function openNav() {
+//   document.getElementById("mySidebar").style.width = "250px";
+//   document.getElementById("main").style.marginLeft = "250px";
+// }
+
+// function closeNav() {
+//   document.getElementById("mySidebar").style.width = "0";
+//   document.getElementById("main").style.marginLeft= "0";
+// }
 
