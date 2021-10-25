@@ -214,7 +214,10 @@ body{
 }
 .openbtn{
   display: none;
-  background-color: #edd222;
+  color: #edd222;
+}
+.openbtn::marker{
+  display: none;
 }
 
 @media screen and (max-width: 900px) {
@@ -337,6 +340,53 @@ body{
     margin-top: 25px;
     float: right;
     cursor: pointer;
+  }
+  #launchlogin{
+    cursor : pointer;
+    color: #edd222;
+  }
+  #form-log{
+    opacity: 0;
+  }
+  
+  #form-log.active{
+    opacity: 1;
+    margin-left: 20%;
+    margin-top:20px;
+    width: 60%;
+    border: 3px solid #2c3e50;
+    border-radius: 15px;
+    padding: 12px;
+    background-color: #edd222;
+    color:#082c3e
+  }
+  #form-log > h2{
+    color:#eee;
+    margin-bottom: 30px;
+  }
+  #form-log > label {
+    color: grey;
+  }
+  #form-log > input {
+    border-radius: 15px;
+  }
+  #form-log > button{
+    padding: 12px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    color: white;
+    background-color: #0d0d0d;
+    border-radius: 15px;
+    font-size: 12px;
+  }
+  #form-log > button:hover{
+    background-color: #082c3e;
+  }
+  #form-log > a{
+    float: right;
+    font-size: 12px;
+    margin-top: 20px;
+    text-decoration:underline;
   }
   div.event{
     display: flex;

@@ -93,8 +93,15 @@ window.addEventListener("scroll", () => {
 			Forum : '<a class="" href="#">Forum</a>',
 			Contact : '<a class="" onclick="closeNav()" href="#part2footer">Nous contacter</a>',
 			Membres : '<a class="act" href="#">Devenir membre</a>',
-			login : '<a id="login-trigger" class="login-trigger"><span class="material-icons">login</span>&nbsp;Se connecter</a>'
+			login : '<a id="launchlogin" ><span class="material-icons">input</span></a>'
 	},
+	})
+
+	const Button = document.getElementById("launchlogin");
+	const SideForm = document.getElementById("form-log");
+
+	Button.addEventListener('click', () => {
+		SideForm.classList.add("active");
 	})
 
 
