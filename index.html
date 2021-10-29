@@ -31,7 +31,7 @@
       <span class="navbar" ><a class="" href="#">Acceuil</a></span>
       <span class="menu"><a class="openbtn" onclick="openNav()">
         <span class="material-icons">
-        menu
+        menu_open
         </span></a>
       </span>
     </header>
@@ -43,6 +43,7 @@
           cancel
           </span>
         </a>
+        <img src="assets/logo.png" class="logoim" alt=""/>
         <!-- Vue js data binding -->
           <span v-html="Acceuil"></span>
           <span v-html="Forum"></span>
@@ -50,6 +51,7 @@
           <span v-html="Membres"></span>
           <span v-html="login"></span>
         <!--  -->
+        <!-- login form for phone -->
         <div id="form-log">
             <h2>Se connecter</h2>
             <label>Nom d'utilisateur:</label>
@@ -59,6 +61,7 @@
               <button typ="submit">Se connecter</button>
               <a class="anchor" href="#">S'inscrire</a>
         </div>
+
       </div>
     </div>
     <!-- sidebar display on phone -->
@@ -417,10 +420,6 @@
       document.getElementById("mySidebar").style.width = "0";
       document.getElementById("main").style.marginLeft= "0";
     }
-
-    // function hideNav() {
-    //   document.getElementById("Navbar").style.display = "hidden";
-    // }
 
     </script>
   </body>

@@ -97,6 +97,8 @@ window.addEventListener("scroll", () => {
 	},
 	})
 
+
+	// login form for phone
 	const Button = document.getElementById("launchlogin");
 	const SideForm = document.getElementById("form-log");
 
