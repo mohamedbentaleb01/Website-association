@@ -92,7 +92,7 @@ window.addEventListener("scroll", () => {
 			Acceuil : '<a class="" href="index.html">Acceuil</a>',
 			Forum : '<a class="" href="#">Forum</a>',
 			Contact : '<a class="" onclick="closeNav()" href="#part2footer">Nous contacter</a>',
-			Membres : '<a class="act" href="#">Devenir membre</a>',
+			Membres : '<a class="act" href="#be-member">Devenir membre</a>',
 			login : '<a id="launchlogin" ><span class="material-icons">input</span></a>'
 	},
 	})

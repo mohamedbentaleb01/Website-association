@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <!-- vueJs integration -->
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <!-- adding swiper JS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
 
     <link rel="shortcut icon" type="image/jpg" href="assets/logo.png"/>
   </head>
@@ -25,7 +27,7 @@
           </span>
         </a> 
       </span>
-      <span class="navbar"><a class="act" href="#">Devenir membre</a></span>
+      <span class="navbar"><a class="act" href="#be-member">Devenir membre</a></span>
       <span class="navbar"><a class="" href="#footer">Nous contacter</a></span>
       <span class="navbar"><a class="" href="#">Forum</a></span>
       <span class="navbar" ><a class="" href="#">Acceuil</a></span>
@@ -135,7 +137,7 @@
             <h1 class="Title-slide1">Association Ibtissamat Al-ghad</h1>
             <p class="p-slide">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis quia libero explicabo, alias rem ipsa quo reiciendis nesciunt error culpa.</p>
             <a href="#event"><button class="more-about">Voir nos évenements</button></a>
-            <button class="become-member">Devenir member</button>
+            <a href="#be-member"><button class="become-member">Devenir member</button></a>
         </div>
       </div> 
 
@@ -259,9 +261,57 @@
 
   <br><br><br><br>
   <!-- fin partie evenements -->
+  <div class="contribution-part">
+    <h1 align="center" class="cont-title">Cotisation</h1>
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+              <div class="cont-card">
+                  <!-- <div class="cont-h3"> -->
+                    <img src="assets/event6.jpg" class="cont-h3" alt=""/>
+                  <!-- </div> --> 
+                  <div class="cont-content">
+                    <h2>Cotisation aid al-adha</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio aliquid libero doloribus quae eos, veritatis modi expedita vitae tenetur exercitationem!</p>
+                    <a href="#">Contribuer</a>
+                  </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="cont-card">
+                  <!-- <div class="cont-h3"> -->
+                    <img src="assets/event7.jpg" class="cont-h3" alt=""/>
+                  <!-- </div> --> 
+                  <div class="cont-content">
+                    <h2>Cotisation Pour entrée scolaire 2022</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio aliquid libero doloribus quae eos, veritatis modi expedita vitae tenetur exercitationem!</p>
+                    <a href="#">Contribuer</a>
+                  </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="cont-card">
+                  <!-- <div class="cont-h3"> -->
+                    <img src="assets/event8.jpg" class="cont-h3" alt=""/>
+                  <!-- </div> --> 
+                  <div class="cont-content">
+                    <h2>Cotisation Ramadan 2021</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio aliquid libero doloribus quae eos, veritatis modi expedita vitae tenetur exercitationem!</p>
+                    <a href="#">Contribuer</a>
+                  </div>
+              </div>
+            </div>
+
+        </div>
+        <div class="swiper-pagination"></div>
+      </div> 
+      
+  </div>
   <!-- qui somme nous -->
   <div class="us">
-    <hr style="color: grey;">
+    <hr style="color: #082c3e;">
       <h1 align="center" class="titleus" data-aos="fade-down-right" data-aos-duration="1400">Qui somme-nous ?</h1>
       
         <!-- video  -->
@@ -323,7 +373,7 @@
     </details>
   </div>
   <!-- become member -->
-  <div class="be-member">
+  <div class="be-member" id="be-member">
     <h1 align="center" class="title-be-member">Devenir membre</h1>
     <p align="center">Pour rejoindre l'association merci de remplir ce formulaire. Nous vous contacterons dans les plus brefs délai.</p>
     <div class="form-be-member" >
@@ -437,6 +487,30 @@
       document.getElementById("main").style.marginLeft= "0";
     }
 
+    </script>
+    <!-- swiper JS -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script>
+    var swiper = new Swiper('.swiper', {
+      effect: 'coverflow',
+      grabCursor: true,
+      centeredSlides: true,
+      autoplay:{
+        delay: 3000,  
+        disableOnInteraction : false,
+      },
+      slidesPerView: 'auto',
+      coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 2000,
+        modifier: 1,
+        slideShadows: false,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+      },
+    });
     </script>
   </body>
   
